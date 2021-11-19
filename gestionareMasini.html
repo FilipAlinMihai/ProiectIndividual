@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ 
+<title>Gestionare</title>
+</head>
+<body>
+<h1>Gestionarea Masinilor</h1>
+<h3>Inchirieri Auto</h3>
+
+
+<p style='font-size:130%'>Pentru adaugarea unei masini noi completafi formularul urmator</p>
+<form action="gestionaremasini.php" method="post">
+<table>
+<tr> <td>Numele masinii</td>  <td><input type="text" name="numemasina" value=""/></td></tr>
+<tr> <td>Producator</td>  <td><input type="text" name="producator" value=""/></td></tr>
+<tr> <td>Tipul</td>  <td><input type="text" name="tip" value=""/></td></tr>
+<tr> <td>Pretul</td>  <td><input type="number" name="pret" value=""/></td></tr>
+<tr> <td><input type="submit" value="adauga" style='font-size:130%'></td>  </tr>
+</table>
+</form>
+
+<p style='font-size:130%'>Puteti stergerea unei masini completafi formularul urmator</p>
+<form action="stergeremasini.php" method="post">
+<table>
+<tr> <td>Numele masinii</td>  <td><input type="text" name="numem" value=""/></td></tr>
+<tr> <td>Producator</td>  <td><input type="text" name="produc" value=""/></td></tr>
+<tr> <td><input type="submit" value="stergere" style='font-size:130%'></td>  </tr>
+</table>
+</form>
+
+</body>
