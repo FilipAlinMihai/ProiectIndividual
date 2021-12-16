@@ -1,5 +1,7 @@
 <?php
 	session_start();
+	echo "<h2>Masinile inchiriate in trecut</h2>";
+	echo "<style> body {  background-color: #DCDCDC;} </style>";
 	$b=mysqli_connect( "localhost", "root",'',"inchirieriauto");
     if (mysqli_connect_errno()) {
 		exit('Connect failed: '. mysqli_connect_error());
@@ -21,12 +23,15 @@
 		
 		if($a==0)
 		{
+		
 			echo "Nu au fost gasite inchirieri anterioare ";
 		}
 	}
 	else
 	{
+		
 		echo "Nu au fost gasite inchirieri anterioare ";
 	}
+	echo '<br><a href="paginaP.html"><button>Pagina Principală</button></a>';
 	$b->close();
 ?>

@@ -16,12 +16,11 @@
 		echo '<li><p style="font-size:18"> Nume: '. $row['NumeMasina']. ' -- Producator : '. $row['Producator']. ' -- Tip: '. $row['Tip'].' -- Pret: '.$row['Pret']."</p></li>";
 	}
 	echo "</ul>";
-	echo '<br><a href="paginaP.html"><button>Pagina Principală</button></a>';
+	echo '<br><a href="gestionareMasini.html"><button>Pagina Principală</button></a>';
 	}
 	else {
 	echo 'Nu au fost gasite rezultate';
 	}	
-	
 	$b->close();
 
 

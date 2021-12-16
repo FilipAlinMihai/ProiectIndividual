@@ -4,6 +4,12 @@
 	$_SESSION['parola']=$_POST["parola1"];
 	$parola2=$_POST["parola2"];
 	$email=$_POST["email"];
+	if(strlen($parola2)>9 || strlen($parola2)<5)
+	{
+		echo "Paroal are dimensiuni nepotrivite";
+	}
+	else
+	{
 	$b=mysqli_connect( "localhost", "root",'',"inchirieriauto");
     if (mysqli_connect_errno()) {
 		exit('Connect failed: '. mysqli_connect_error());
@@ -45,4 +51,5 @@
 	
 	}
 	$b->close();
+	}
 ?>

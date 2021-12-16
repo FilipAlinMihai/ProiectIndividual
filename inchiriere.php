@@ -18,9 +18,10 @@
 			if($row['NumeMasina']==$num && $row['Producator']==$marca)
 				$a=1;
 		}
+		date_default_timezone_set("Europe/Bucharest");
 		if($a==1)
 		{
-			$d=date("Y/m/d h:i");
+			$d=date("Y/m/d ").date("h:i");
 			$inchiriere="Insert into `inchirieri` (NumePersoana,NumeMasina,Data) values ('".$_SESSION['numeutilizator']."','".$marca." ".$num."','".$d."')";
 			if(mysqli_query($b,$inchiriere))
 				echo "Date adaugate";

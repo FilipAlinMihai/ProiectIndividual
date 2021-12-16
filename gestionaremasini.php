@@ -10,6 +10,7 @@
 	}
 	$com="SELECT * FROM `masini`";
 		$info=$b->query($com);
+	$a=0;
 	if($info->num_rows > 0)
 	{
 		$a=0;

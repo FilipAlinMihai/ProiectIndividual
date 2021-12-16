@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+ 
+<title>Autentificare</title>
+<style>
+body {
+
+  background-color: #DCDCDC;
+}
+h1{
+ text-shadow: 1px 1px;
+}
+.center {
+	
+  margin: auto;
+  width: 50%;
+  padding: 15px;
+  border:3px solid #73AD21
+}
+div{
+box-shadow: 10px 10px;
+}
+.formular{
+border:3px solid #00BFFF
+}
+</style>
+</head>
+<body>
+
+<script>
+function functia1()
+{
+	var a=document.getElementById("PUtilizator");
+	if(a.type==="password")
+		a.type="text";
+	else
+		a.type="password";
+}
+function functia2()
+{
+	var a=document.getElementById("PAdm");
+	if(a.type==="password")
+		a.type="text";
+	else
+		a.type="password";
+}
+</script>
+
+<div class="center">
+<h1>Pagină de Autentificare</h1>
+<h3>Inchirieri Auto</h3>
+<form action="login.php" method="post" class="formular">
+<table>
+<tr> <td>Nume de utilizator</td>  <td><input type="text" name="numeutilizator" value=""/></td></tr>
+<tr> <td>Parola</td>  <td><input type="password" name="parola" value="" id="PUtilizator"/></td>
+<td><input type="checkbox" onclick="functia1()">Arata Parola</td></tr>
+<tr> <td><input type="submit" value="Conectare" style='font-size:130%'></td>  </tr>
+</table>
+</form>
+
+<p style='font-size:130%'>Puteti crea un cont de utilizator daca nu aveti unul</p>
+
+<a href='crearecont.html'><button style='font-size:130%'>Creează Cont</button></a>
+<h3>Administrator</h3>
+<form action="loginAdmisistrator.php" method="post" class="formular">
+<table>
+<tr> <td>Nume de administrator</td>  <td><input type="text" name="numeuADM" value=""/></td></tr>
+<tr> <td>Parola de administrator</td>  <td><input type="password" name="parolaA" value="" id="PAdm"/></td>
+<td><input type="checkbox" onclick="functia2()">Arata Parola</td></tr>
+<tr> <td><input type="submit" value="Conectare" style='font-size:130%'></td>  </tr>
+</table>
+</form>
+</div>
+</body>

@@ -5,8 +5,30 @@
 <meta charset="UTF-8">
 
 <title>PaginaPrincipala</title>
+<style>
+body {
+
+  background-color: #DCDCDC;
+}
+h1{
+ text-shadow: 1px 1px;
+}
+.center {
+	
+  margin: auto;
+  width: 50%;
+  padding: 15px;
+  border:3px solid #73AD21
+  
+}
+div{
+ box-shadow: 10px 10px;
+}
+
+</style>
 </head>
 <body>
+<div class="center">
 <h1>Pagina Principala</h1>
 <h2>Inchirieri Auto</h2>
 
@@ -14,5 +36,25 @@
 
 <a href="inchiriere.html"><button style="font-size:130%">Inchiriati</button></a></br>
 
-<a href="inchirieriAnterioare.php"><button style="font-size:130%">Inchiriati Anterioare</button></a>
+<a href="inchirieriAnterioare.php"><button style="font-size:130%">Inchirieri Anterioare</button></a>
+
+<form action="cautareMasina.php" method="post">
+<table>
+<tr>
+ <td><p style="font-size:23px">Cauta o masina<p></td>
+ <td><input type="text" name="masina" value=""/></td>
+ <td><input type="submit" value="Cautare" style='font-size:130%'></td>
+</tr>
+</table>
+</form>
+
+<a href="index.html"><button style="font-size:130%">Iesire</button></a>
+</div>
+
+<div class="center">
+<p style='font-size:18px'>1.Clientul trebuie sa se prezinte la sediul companiei pentru a ridica masina in 24 de ore de la depunere cererii </p>
+<p style='font-size:18px'>2.Clientul este responsabil pentru toate daunele aduse maninii pe perioada inchirieri </p>
+<p style='font-size:18px'>3.Daca au existat defectiuni pe parcursul inchirierii clientul va primi banii inapoi  plus un bonus de 30% </p>
+
+</div>
 </body>

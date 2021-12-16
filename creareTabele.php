@@ -29,7 +29,7 @@ if(mysqli_connect_errno()){
 	$sql="CREATE TABLE `inchirieri` (
 	`NumePersoana` VARCHAR(100) NOT NULL ,
 	`NumeMasina` VARCHAR(100) NOT NULL,
-	`Data` DATE NOT NULL
+	`Data` DATETIME NOT NULL
 	) ";
 	if($b->query($sql)===TRUE)
 		echo "Tabelul 'inchirieri' a fost creat cu succes <br/>";

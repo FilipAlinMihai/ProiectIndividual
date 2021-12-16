@@ -5,14 +5,38 @@
 <meta charset="UTF-8">
  
 <title>Gestionare</title>
+<style>
+body {
+
+  background-color: #DCDCDC;
+}
+h1{
+ text-shadow: 1px 1px;
+}
+.center {
+	
+  margin: auto;
+  width: 50%;
+  padding: 15px;
+  border:3px solid #73AD21
+  
+}
+div{
+ box-shadow: 10px 10px;
+}
+.formular{
+border:3px solid #00BFFF
+}
+</style>
 </head>
 <body>
+<div class="center">
 <h1>Gestionarea Masinilor</h1>
 <h3>Inchirieri Auto</h3>
 
 
-<p style='font-size:130%'>Pentru adaugarea unei masini noi completafi formularul urmator</p>
-<form action="gestionaremasini.php" method="post">
+<p style='font-size:130%'>Pentru adaugarea unei masini noi completati formularul urmator</p>
+<form action="gestionaremasini.php" method="post" class="formular">
 <table>
 <tr> <td>Numele masinii</td>  <td><input type="text" name="numemasina" value=""/></td></tr>
 <tr> <td>Producator</td>  <td><input type="text" name="producator" value=""/></td></tr>
@@ -22,13 +46,29 @@
 </table>
 </form>
 
-<p style='font-size:130%'>Puteti stergerea unei masini completafi formularul urmator</p>
-<form action="stergeremasini.php" method="post">
+<p style='font-size:130%'>Pentru stergerea unei masini completati formularul urmator</p>
+<form action="stergeremasini.php" method="post" class="formular">
 <table>
 <tr> <td>Numele masinii</td>  <td><input type="text" name="numem" value=""/></td></tr>
 <tr> <td>Producator</td>  <td><input type="text" name="produc" value=""/></td></tr>
 <tr> <td><input type="submit" value="stergere" style='font-size:130%'></td>  </tr>
 </table>
 </form>
+<br>
+<p style='font-size:130%'>Pentru stergerea unei inchirieri completati formularul urmator</p>
+<form action="stergereInchiriere.php" method="post" class="formular">
+<table>
+<tr> <td>Numele clientului</td>  <td><input type="text" name="numemClient" value=""/></td></tr>
+<tr> <td>Numele masinii</td>  <td><input type="text" name="numemM" value=""/></td></tr>
+<tr> <td>Producator</td>  <td><input type="text" name="producatorM" value=""/></td></tr>
+<tr> <td><input type="submit" value="stergere" style='font-size:130%'></td>  </tr>
+</table>
+</form>
+<br>
 
+<a href="afisareA.php"><button style="font-size:130%">Masini</button></a></br></br>
+<a href="afisareInchirieri.php"><button style="font-size:130%">Inchirieri</button></a></br></br>
+<a href="afisareClienti.php"><button style="font-size:130%">Utilizatori</button></a></br></br>
+<a href="index.html"><button style="font-size:130%">Iesire</button></a>
+</div>
 </body>
