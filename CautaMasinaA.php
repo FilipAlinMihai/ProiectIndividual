@@ -28,6 +28,6 @@
 	{
 		echo 'Nu au fost gasite rezultate';
 	}	
-	echo '<br><a href="../paginaP.html"><button>Pagina Principală</button></a>';
+	echo '<br><a href="../gestionareMasini.html"><button>Pagina Principală</button></a>';
 	$b->close();
 ?>

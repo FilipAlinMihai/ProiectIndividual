@@ -20,7 +20,7 @@
 		}
 		if($a==1)
 		{
-			header("Location: ./paginaP.html");
+			header("Location: ../paginaP.html");
 		}
 		else
 		{

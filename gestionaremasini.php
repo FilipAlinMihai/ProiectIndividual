@@ -3,6 +3,7 @@
 	$producator=$_POST["producator"];
 	$tip=$_POST["tip"];
 	$pret=$_POST["pret"];
+	$nr=$_POST["nr"];
 	
 	$b=mysqli_connect( "localhost", "root",'',"inchirieriauto");
     if (mysqli_connect_errno()) {
@@ -26,7 +27,7 @@
 		}
 		else
 		{
-			$masinanoua="Insert into `masini` (NumeMasina,Producator,Tip,Pret) values ('".$nume."','".$producator."','".$tip."',".$pret.")";
+			$masinanoua="Insert into `masini` (NumeMasina,Producator,Tip,Pret,Numar) values ('".$nume."','".$producator."','".$tip."',".$pret.",".$nr.")";
 			if(mysqli_query($b,$masinanoua))
 				echo "Masina a fost adaugata";
 			else

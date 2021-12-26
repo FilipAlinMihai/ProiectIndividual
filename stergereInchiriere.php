@@ -38,6 +38,6 @@ $b = new mysqli('localhost', 'root', '', 'inchirieriauto');
 		echo "Inchiriere nu exista";
 	}
 	
-	echo '<br><a href="gestionareMasini.html"><button>Pagina Principală</button></a>';
+	echo '<br><a href="../gestionareMasini.html"><button>Pagina Principală</button></a>';
 	$b->close();
 ?>

@@ -3,75 +3,74 @@
 
 <head>
 <meta charset="UTF-8">
- 
-<title>Autentificare</title>
-<style>
-body {
-
-  background-color: #DCDCDC;
-}
-h1{
- text-shadow: 1px 1px;
-}
-.center {
-	
-  margin: auto;
-  width: 50%;
-  padding: 15px;
-  border:3px solid #73AD21
-}
-div{
-box-shadow: 10px 10px;
-}
-.formular{
-border:3px solid #00BFFF
-}
-</style>
+ <link rel="stylesheet" href="./CSS/index.css">
+<title>Masina Perfecta</title>
 </head>
 <body>
 
 <script>
-function functia1()
-{
-	var a=document.getElementById("PUtilizator");
-	if(a.type==="password")
-		a.type="text";
-	else
-		a.type="password";
+var i=0;
+var imagini=[];
+var timp=5000;
+imagini[0]="imagini/GiuliaAlfa Romeo.jpg";
+imagini[1]="imagini/StelvioAlfa Romeo.jpg";
+imagini[2]="imagini/LoganDacia.jpg";
+imagini[3]="imagini/XC60Volvo.jpg";
+imagini[4]="imagini/MeganeRenault.jpg";
+imagini[5]="imagini/FiestaFord.jpg";
+imagini[6]="imagini/CorollaToyota.jpg";
+imagini[7]="imagini/ClioRenault.jpg";
+
+function fun(){
+document.imgs.src=imagini[i];
+if(i<imagini.length-1){
+i++;
 }
-function functia2()
+else
 {
-	var a=document.getElementById("PAdm");
-	if(a.type==="password")
-		a.type="text";
-	else
-		a.type="password";
+i=0;
 }
+setTimeout("fun()",timp);
+}
+window.onload=fun;
 </script>
 
-<div class="center">
-<h1>Pagină de Autentificare</h1>
-<h3>Inchirieri Auto</h3>
-<form action="login.php" method="post" class="formular">
-<table>
-<tr> <td>Nume de utilizator</td>  <td><input type="text" name="numeutilizator" value=""/></td></tr>
-<tr> <td>Parola</td>  <td><input type="password" name="parola" value="" id="PUtilizator"/></td>
-<td><input type="checkbox" onclick="functia1()">Arata Parola</td></tr>
-<tr> <td><input type="submit" value="Conectare" style='font-size:130%'></td>  </tr>
-</table>
-</form>
 
-<p style='font-size:130%'>Puteti crea un cont de utilizator daca nu aveti unul</p>
 
-<a href='crearecont.html'><button style='font-size:130%'>Creează Cont</button></a>
-<h3>Administrator</h3>
-<form action="loginAdmisistrator.php" method="post" class="formular">
-<table>
-<tr> <td>Nume de administrator</td>  <td><input type="text" name="numeuADM" value=""/></td></tr>
-<tr> <td>Parola de administrator</td>  <td><input type="password" name="parolaA" value="" id="PAdm"/></td>
-<td><input type="checkbox" onclick="functia2()">Arata Parola</td></tr>
-<tr> <td><input type="submit" value="Conectare" style='font-size:130%'></td>  </tr>
-</table>
-</form>
+<div class="rotund">
+<div class="Titlu" id="tit">
+<h1>Masina Perfecta</h1>
+<p id="subtitlu">La momentul potrivit</p>
 </div>
+<div id="cont">
+	<p>Inchiriaza simplu si rapid</p>
+</div>
+<div class="butoane">
+<a href='crearecont.html'><button  class="button">Creează Cont</button></a><br>
+<a href='login.html'><button class="button">Autentificare</button></a>
+</div>
+</div>
+</br>
+<div class="Fereastra">
+<img src="imagini/GiuliaAlfaRomeo.jpg" name="imgs" width="680" height="400"><br>
+<p>Masini din oferta noastra</p>
+</div>
+</br>
+
+<div class="rotund" id="date">
+<h2>Detalii de inchiriere</h2>
+<p>Ridicarea masinii se face la sediu</p>
+<p>Cererea va fi aprobata sau respinsa in cel mai scurt timp posibil</p>
+<p>Plata se efectueaza inaintea ridicarii</p>
+</div>
+</br>
+
+<div class="rotund" id="date1">
+<h2>Date de contact</h2>
+<h3>Contacteaza-ne prin : </h3>
+<p>Email: masina.perfecta@gmail.com</p>
+<p>Numar de telefon: 0734457383</p>
+<p>Adresa: Arad Strada Unirii Nr 27</p>
+</div>
+
 </body>

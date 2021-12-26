@@ -13,10 +13,11 @@ echo "<h2>Inchirieri Anterioare</h2>";
 	if ($info->num_rows > 0) {
 	echo "<ul>";
 	while($row = $info->fetch_assoc()) {
-		echo '<li><p style="font-size:18"> Nume Client: '. $row['NumePersoana']. ' -- Nume Masina : '. $row['NumeMasina']. ' -- Data: '. $row['Data']."</p></li>";
+		echo '<li><p style="font-size:18">Codul: '.$row['Cod'].' Nume Client: '. $row['NumePersoana']. ' -- Nume Masina : '. $row['NumeMasina']. ' -- Data: '. $row['Data']." --Status: ".$row['Statut']."</p></li>";
+		
 	}
 	echo "</ul>";
-	echo '<br><a href="gestionareMasini.html"><button>Pagina Principală</button></a>';
+	echo '<br><a href="../gestionareMasini.html"><button>Pagina Principală</button></a>';
 	}
 	else {
 	echo 'Nu au fost gasite rezultate';

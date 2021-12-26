@@ -3,54 +3,36 @@
 
 <head>
 <meta charset="UTF-8">
-
+ <link rel="stylesheet" href="./CSS/PaginaP.css">
 <title>PaginaPrincipala</title>
-<style>
-body {
-
-  background-color: #DCDCDC;
-}
-h1{
- text-shadow: 1px 1px;
-}
-.center {
-	
-  margin: auto;
-  width: 50%;
-  padding: 15px;
-  border:3px solid #73AD21
-  
-}
-div{
- box-shadow: 10px 10px;
-}
-
-</style>
 </head>
 <body>
+
 <div class="center">
+<div id="titlu">
 <h1>Pagina Principala</h1>
+</div>
 <h2>Inchirieri Auto</h2>
 
-<a href="afisare.php"><button style="font-size:130%">Masini</button></a></br>
+<a href="PHP/afisare.php"><button class="button">Masini</button></a></br>
 
-<a href="inchiriere.html"><button style="font-size:130%">Inchiriati</button></a></br>
+<a href="inchiriere.html"><button class="button">Inchiriati</button></a></br>
 
-<a href="inchirieriAnterioare.php"><button style="font-size:130%">Inchirieri Anterioare</button></a>
+<a href="PHP/inchirieriAnterioare.php"><button class="button">Inchirieri Anterioare</button></a>
 
-<form action="cautareMasina.php" method="post">
+<form action="PHP/cautareMasina.php" method="post">
 <table>
 <tr>
  <td><p style="font-size:23px">Cauta o masina<p></td>
  <td><input type="text" name="masina" value=""/></td>
- <td><input type="submit" value="Cautare" style='font-size:130%'></td>
+ <td><input type="submit" value="Cautare" class="button"></td>
 </tr>
 </table>
 </form>
 
-<a href="index.html"><button style="font-size:130%">Iesire</button></a>
+<a href="index.html"><button class="button">Iesire</button></a>
 </div>
-
+<br>
 <div class="center">
 <p style='font-size:18px'>1.Clientul trebuie sa se prezinte la sediul companiei pentru a ridica masina in 24 de ore de la depunere cererii </p>
 <p style='font-size:18px'>2.Clientul este responsabil pentru toate daunele aduse maninii pe perioada inchirieri </p>

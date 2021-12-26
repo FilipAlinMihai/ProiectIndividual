@@ -16,7 +16,7 @@ echo "<h2>Utilizatori</h2>";
 		echo '<li><p style="font-size:18"> Nume: '. $row['Nume'];
 	}
 	echo "</ul>";
-	echo '<br><a href="gestionareMasini.html"><button>Pagina Principală</button></a>';
+	echo '<br><a href="../gestionareMasini.html"><button>Pagina Principală</button></a>';
 	}
 	else {
 	echo 'Nu au fost gasite rezultate';

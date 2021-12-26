@@ -43,7 +43,7 @@
 			{
 				$utilizator="Insert into `utilizatori` (Nume,Parola,email) values ('".$_SESSION['numeutilizator']."','".$_SESSION['parola']."','".$email."')"; 
 				if(mysqli_query($b,$utilizator))
-					 header("Location: ./paginaP.html");
+					 header("Location: ../paginaP.html");
 				 else
 					 echo "Datele nu au putut fi adaugate ". mysqli_errno($b). " : ". mysqli_error($b);
 			}
